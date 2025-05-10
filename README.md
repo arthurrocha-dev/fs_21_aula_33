@@ -22,3 +22,19 @@ Inicia o projeto sequelize com o sequelize-cli
 ```
     npx sequelize-cli init
 ```
+
+Criando a primeiro model de Alunos
+```
+    npx sequelize-cli model:generate --name Alunos --attributes nome:string
+```
+
+Rodar as migrations
+```
+npx sequelize-cli db:migrate
+```
+
+Desfazer última migration
+```
+npx sequelize-cli db:migrate:undo
+
+```
